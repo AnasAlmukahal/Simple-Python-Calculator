@@ -1,0 +1,38 @@
+#plus
+def add (x,y):
+    return x + y
+#multiply
+def multiplication (x , y):
+    return x * y
+#minus
+def minus (x , y):
+    return x - y
+#devide
+def divide (x , y):
+    return x / y
+print('select the operation by alphabet.')
+print('A: add')
+print('B: multiplication')
+print('C: minus')
+print('D: divide')
+while True:
+    choice = input("Enter choice: ")
+
+    if choice in ('a', 'b', 'c', 'd'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if choice == 'a':
+            print(num1, "+", num2, "=", add(num1, num2))
+
+        elif choice == 'b':
+            print(num1, "*", num2, "=", multiplication(num1, num2))
+
+        elif choice == 'c':
+            print(num1, "-", num2, "=", minus(num1, num2))
+
+        elif choice == 'd':
+            print(num1, "/", num2, "=", divide(num1, num2))
+        break
+    else:
+        print("Invalid Input, Please try again.")
